@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himanshu Jangra | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ─── PARTICLES BACKGROUND ─── -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>HJ<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, World! I'm</p>
+      <h1 class="hero-name">Himanshu Jangra</h1>
+      <div class="hero-typed-wrap">
+        <span id="typed-text"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        Building systems, not just shortcuts — from web apps to content that resonates with audiences worldwide.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Hire Me
+        </a>
+        <a href="https://github.com/Himanshujangra400" target="_blank" rel="noopener" class="btn btn-ghost">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="15">0</span>+
+          <span class="stat-label">Repos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span>+
+          <span class="stat-label">Live Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="6">0</span>+
+          <span class="stat-label">Tech Skills</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-avatar">
+      <div class="avatar-ring"></div>
+      <div class="avatar-ring ring-2"></div>
+      <div class="avatar-img-wrap">
+        <img
+          src="https://avatars.githubusercontent.com/u/203610397?v=4"
+          alt="Himanshu Jangra"
+          class="avatar-img"
+        />
+      </div>
+      <div class="avatar-badge">
+        <i class="fas fa-code"></i> Developer
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-dot"></span>
+    </a>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">// who am I</p>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card" data-aos="fade-right" data-aos-delay="100">
+          <div class="about-icon"><i class="fas fa-user-astronaut"></i></div>
+          <h3>Who I Am</h3>
+          <p>
+            I'm Himanshu — an aspiring developer and content creator based in India.
+            I love building real-world projects that solve problems and create value.
+            My journey blends code, creativity, and relentless learning.
+          </p>
+        </div>
+        <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="about-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>What I Do</h3>
+          <p>
+            I build full-stack web apps using HTML, CSS, JavaScript, React & Node.js.
+            Alongside coding, I run a YouTube channel targeting the US audience with
+            high-retention storytelling and content automation workflows.
+          </p>
+        </div>
+        <div class="about-card" data-aos="fade-left" data-aos-delay="300">
+          <div class="about-icon"><i class="fas fa-rocket"></i></div>
+          <h3>What's Next</h3>
+          <p>
+            Currently focused on mastering APIs, automation, and AI-powered tools.
+            Building systems that scale — not just quick hacks. Always shipping, always learning.
+          </p>
+        </div>
+      </div>
+      <div class="about-info" data-aos="fade-up" data-aos-delay="200">
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <span>jangrahimanshu076@gmail.com</span>
+        </div>
+        <div class="info-item">
+          <i class="fab fa-youtube"></i>
+          <span>USA Car Vault — YouTube</span>
+        </div>
+        <div class="info-item">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/Himanshujangra400" target="_blank" rel="noopener">github.com/Himanshujangra400</a>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>India 🇮🇳</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">// what I know</p>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Dev Skills -->
+        <div class="skills-col" data-aos="fade-right" data-aos-delay="100">
+          <h3 class="skills-col-title"><i class="fas fa-laptop-code"></i> Dev Stack</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>HTML5</span><span>95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>CSS3</span><span>88%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>JavaScript</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>React.js</span><span>72%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Node.js / Express</span><span>65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Git / GitHub</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+        </div>
+        <!-- Creator Skills -->
+        <div class="skills-col" data-aos="fade-left" data-aos-delay="200">
+          <h3 class="skills-col-title"><i class="fas fa-film"></i> Creator Stack</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>CapCut / Premiere Pro</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90" style="background: linear-gradient(90deg, #f59e0b, #ef4444);"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>AI Tools (Veo / Automation)</span><span>82%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="82" style="background: linear-gradient(90deg, #f59e0b, #ef4444);"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Canva / Figma</span><span>78%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="78" style="background: linear-gradient(90deg, #f59e0b, #ef4444);"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info"><span>Content Storytelling</span><span>88%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="88" style="background: linear-gradient(90deg, #f59e0b, #ef4444);"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Icons -->
+      <div class="tech-icons" data-aos="fade-up" data-aos-delay="300">
+        <div class="tech-icon" title="HTML5"><i class="fab fa-html5"></i><span>HTML5</span></div>
+        <div class="tech-icon" title="CSS3"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+        <div class="tech-icon" title="JavaScript"><i class="fab fa-js-square"></i><span>JS</span></div>
+        <div class="tech-icon" title="React"><i class="fab fa-react"></i><span>React</span></div>
+        <div class="tech-icon" title="Node.js"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+        <div class="tech-icon" title="Git"><i class="fab fa-git-alt"></i><span>Git</span></div>
+        <div class="tech-icon" title="GitHub"><i class="fab fa-github"></i><span>GitHub</span></div>
+        <div class="tech-icon" title="YouTube"><i class="fab fa-youtube"></i><span>YouTube</span></div>
+        <div class="tech-icon" title="Figma"><i class="fab fa-figma"></i><span>Figma</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">// what I've built</p>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-heading"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Himanshujangra400" target="_blank" rel="noopener" title="Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">YouTube Title Generator</h3>
+          <p class="project-desc">
+            Instantly generate high-retention YouTube titles optimized for the US audience.
+            Clean UI with copy-to-clipboard functionality.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card featured" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-badge">⭐ Featured</div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-database"></i></div>
+            <div class="project-links">
+              <a href="https://dm-omega-dusky.vercel.app/#/login" target="_blank" rel="noopener" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/gauravkataria00/dm" target="_blank" rel="noopener" title="Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Dairy Management System</h3>
+          <p class="project-desc">
+            Full-stack system to manage clients, milk entries, settlements, payments & reports.
+            Built with React + Vite + Tailwind on the frontend and Node.js + Express + SQLite backend.
+          </p>
+          <div class="project-tags">
+            <span>React</span><span>Vite</span><span>Tailwind</span><span>Node.js</span><span>SQLite</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card featured" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-badge">⭐ Featured</div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="project-links">
+              <a href="https://react-college-five.vercel.app" target="_blank" rel="noopener" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/Himanshujangra400/react-college" target="_blank" rel="noopener" title="Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">EduVault — Budha College</h3>
+          <p class="project-desc">
+            Full-stack demo platform featuring students, portfolios marketplace with search &amp; filter.
+            Complete educational management with modern UI.
+          </p>
+          <div class="project-tags">
+            <span>React</span><span>Vite</span><span>Tailwind</span><span>Node.js</span><span>Express</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-globe"></i></div>
+            <div class="project-links">
+              <a href="https://elite5-self.vercel.app/index.html" target="_blank" rel="noopener" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/gauravkataria00/Elite5" target="_blank" rel="noopener" title="Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Elite5</h3>
+          <p class="project-desc">
+            A collaborative web project demonstrating modern frontend techniques and UI/UX design principles.
+            Responsive and clean interface.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-school"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Himanshujangra400/college-project" target="_blank" rel="noopener" title="Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">College Project</h3>
+          <p class="project-desc">
+            Multi-page college management website with student data, departments, products, portfolios, and top-student rankings.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Project 6 – CTA -->
+        <div class="project-card project-cta" data-aos="fade-up" data-aos-delay="600">
+          <div class="project-cta-inner">
+            <i class="fab fa-github cta-icon"></i>
+            <h3>More on GitHub</h3>
+            <p>Explore all my open-source work and experiments.</p>
+            <a href="https://github.com/Himanshujangra400?tab=repositories" target="_blank" rel="noopener" class="btn btn-primary">
+              View All Repos <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">// get in touch</p>
+        <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left" data-aos="fade-right" data-aos-delay="100">
+          <h3>Let's work together!</h3>
+          <p>
+            Whether you have a project in mind, want to collaborate, or just want to say hi —
+            my inbox is always open. I'll get back to you as soon as possible!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:jangrahimanshu076@gmail.com" class="contact-link">
+              <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span>Email</span>
+                <small>jangrahimanshu076@gmail.com</small>
+              </div>
+            </a>
+            <a href="https://github.com/Himanshujangra400" target="_blank" rel="noopener" class="contact-link">
+              <div class="contact-link-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span>GitHub</span>
+                <small>Himanshujangra400</small>
+              </div>
+            </a>
+            <a href="https://www.youtube.com/@USACarVault" target="_blank" rel="noopener" class="contact-link">
+              <div class="contact-link-icon yt"><i class="fab fa-youtube"></i></div>
+              <div>
+                <span>YouTube</span>
+                <small>USA Car Vault</small>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right" data-aos="fade-left" data-aos-delay="200">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Hey Himanshu, let's collaborate!" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-note" id="form-note"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>HJ<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-tagline">Built with <span class="heart">❤️</span> by Himanshu Jangra</p>
+      <div class="footer-socials">
+        <a href="mailto:jangrahimanshu076@gmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/Himanshujangra400" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/@USACarVault" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p class="footer-copy">© 2025 Himanshu Jangra · All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
