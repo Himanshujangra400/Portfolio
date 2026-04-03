@@ -180,6 +180,7 @@ document.querySelectorAll('.skills-col').forEach(col => skillObserver.observe(co
     }
   }
 
+  // ~1 particle per 14 000 px² of viewport area, capped at 120 for performance
   const COUNT = Math.min(Math.floor((W * H) / 14000), 120);
   particles = Array.from({ length: COUNT }, () => new Particle());
 
@@ -225,6 +226,7 @@ form.addEventListener('submit', (e) => {
     formNote.textContent = '⚠️ Please fill in all fields.';
     return;
   }
+  // Basic email format check (name@domain.tld); intentionally simple — full RFC validation is handled server-side
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     formNote.style.color = '#ef4444';
     formNote.textContent = '⚠️ Please enter a valid email address.';
